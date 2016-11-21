@@ -9,10 +9,11 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Starter Template for Bootstrap</title>
+    <title>NextGen Fitness</title>
 
     <!-- Bootstrap core CSS -->
     <link href="dist/styles/main.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Hammersmith+One|Lato:400,900" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -21,37 +22,201 @@
     <![endif]-->
   </head>
 
-  <body>
+  <body data-spy="scroll" data-target=".navbar" data-offset="100">
 
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Project name</a>
+  
+    <div class="hero">
+      <div class="jumbotron">
+        <div class="row text-center">
+          <div class="col-sm-10 col-sm-offset-1">
+            <img src="dist/images/nextgen-logo-white.png" class="hero_logo" alt="NextGen Fitness">
+            <h1 class="allcaps inline">The next generation of fitness begins today.</h1>
+            <div class="btn-spacer">
+              <a href="#" class="btn gradient mild btn-lg">Find a Bootcamp</a>
+              <a href="#" class="btn ghost btn-lg">What is NextGen?</a>
+            </div>
+          </div>
         </div>
-        <div id="navbar" class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
       </div>
-    </nav>
+    </div>
+    <div class="container_spacer gradient"></div>
+    <div id="navbar_wrap_scroll_checkpoint"></div>
+    <div id="navbar_placeholder">
+      <div id="navbar_wrap">
+        <nav class="navbar">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">
+                <img src="dist/images/nextgen-logo-color.png" alt="NextGen Fitness">
+              </a>
+            </div>
+            <div id="navbar" class="collapse navbar-collapse">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Find a Bootcamp</a></li>
+                <li><a href="#findatrainer">Find a Trainer</a></li>
+                <li><a href="#ourgym">OUR GYM</a></li>
+                <!--<li><a href="#">Blog</a></li>-->
+                <!--<li><a href="#">Fitness Studio</a></li>-->
+                <li><a href="# "data-toggle="modal" data-target="#becomeTrainerModal">Become a Trainer</a></li>
+                <li><a href="#questions">Questions?</a></li>
+              </ul>
+            </div><!--/.nav-collapse -->
+        </nav>
+      </div><!-- /.navbar_wrap -->
+    </div>
+    <div class="section_wrap running_man_bg">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7 col-md-6 col-sm-6">
+            <div class="waypoint">WHAT IS NEXTGEN FITNESS?</div>
+            <div class="text-center-xs">
+              <h2 class="gradient text text-larger">THE NEXT GENERATION OF FITNESS BEGINS TODAY.</h2>
+              <p>Lorem ipsum dolor sit amet, consetetuasdf dfdf dr sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet sic san.</p>
 
-    <div class="container">
-
-      <div class="starter-template">
-        <h1>Bootstrap starter template</h1>
-        <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+              <p>Lorem ictus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor, no sea takimata sanctus est Lorem ipsuefe efadf m dolor sit amet.</p>
+              <p>Lorem ictus est Lorem ipsum dolor ef ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+              <a href="#" class="btn gradient mild btn-md">Find a Bootcamp</a>
+            </div>
+          </div>
+        </div>
       </div>
+    </div>
+    <div class="container_spacer gradient"></div>
+    <div class="section_wrap texture" id="findatrainer">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2">
+            <img src="dist/images/dumbbell.png" alt="NextGen Fitness">
+            <h2 class="gradient text text-larger">FIND A NEXTGEN CERTIFIED TRAINER</h2>
+            <p>Lorem ictus est Lorem ipsum dolor ef ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+            <div class="row">
+              <div class="col-sm-8 col-sm-offset-2">
+                <form>
+                  <div class="input-group input-group-lg">
+                    <input type="text" class="form-control" placeholder="Enter ZIP code...">
+                    <span class="input-group-btn">
+                      <button class="btn btn-secondary" type="button"><img src="dist/images/search.png"></button>
+                    </span>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <br>
+            <p><a href="#">Interested in becoming a trainer?</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section_wrap gym_bg section_wrap_inverted" id="ourgym">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7 col-md-8 col-sm-8 col-xs-11">
+            <div class="waypoint">OUR GYM</div>
+            <h2 class="text-larger">THE NEXT GENERATION OF FITNESS BEGINS TODAY.</h2>
+            <p>Lorem ipsum dolor sit amet, consetetuasdf dfdf dr sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet sic san.</p>
 
-    </div><!-- /.container -->
+            <p>Lorem ictus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor, no sea takimata sanctus est Lorem ipsuefe efadf m dolor sit amet.</p>
+            <a href="#" class="btn gradient mild btn-md">GET NOTIFIED</a>
+          </div>
+          <div class="col-lg-5 col-md-4 col-sm-4 hidden-xs text-right">
+            <img class="hidden-xs" src="dist/images/nextgen-logo-white.png" width="200">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section_wrap texture" id="questions">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2">
+            <img src="dist/images/heartbeat.png" alt="NextGen Fitness">
+            <h2 class="gradient text text-larger">WANT TO LEARN MORE?</h2>
+            <p>Lorem ictus est Lorem ipsum dolor ef ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+            <div class="btn-spacer">
+              <a href="#" class="btn gradient mild btn-md" data-toggle="modal" data-target="#questionsModal">QUESTIONS?</a>
+              <a href="#" class="btn ghost ghost-inverted btn-md" data-toggle="modal" data-target="#becomeTrainerModal">BECOME A TRAINER</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 col-sm-offset-3 text-center">
+            <img src="dist/images/nextgen-logo-color.png" width="200" alt="NextGen Fitness">
+            <br>
+            <br>
+            <br>
+            <div class="row">
+              <div class="col-xs-6 text-left">
+                <ul class="list-unstyled footer-sitemap">
+                  <li><a href="#">Find a Bootcamp</a></li>
+                  <li><a href="#">Find a Trainer</a></li>
+                  <li><a href="#">Our Gym</a></li>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">Fitness Studio</a></li>
+                  <li><a href="#">Become a Trainer</a></li>
+                  <li><a href="#">Questions</a></li>
+                </ul>
+              </div>
+              <div class="col-xs-6 text-left">
+                <p>
+                123 Something Street<br>
+                Arvada, CO 12345<br>
+                <a href="mailto:info@nextgenfitness.com">info@nextgenfitness.com</a><br>
+                </p>
+                <p>&copy; 2016 Nextgen Fitness<br>All rights reserved</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="container_spacer gradient"></div>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="questionsModal" tabindex="-1" role="dialog" aria-labelledby="questionsLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h3 class="modal-title gradient text" id="questionsLabel">Questions? Let us know!</h3>
+          </div>
+          <div class="modal-body">
+            Contact Form goes here!
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn ghost ghost-inverted" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="modal fade" id="becomeTrainerModal" tabindex="-1" role="dialog" aria-labelledby="becomeTrainerModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h3 class="modal-title gradient text" id="becomeTrainerModalLabel">Interested in becoming a NextGen Trainer?</h3>
+          </div>
+          <div class="modal-body">
+            Form for becoming a trainer goes here!
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn ghost ghost-inverted" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
 
 
     <!-- Bootstrap core JavaScript
